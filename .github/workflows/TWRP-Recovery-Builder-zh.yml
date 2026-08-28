@@ -71,7 +71,7 @@ on:
       upload_zip:
         description: '是否上传 ZIP 刷机包（作为 Artifact）'
         required: true
-        default: true
+        default: false
         type: boolean
 
       upload_release:
@@ -83,13 +83,13 @@ on:
       apply_sprd_drm_patch:
         description: '是否应用展讯DRM显示修复补丁（解决展讯平台TWRP卡Logo无法显示UI的问题）'
         required: true
-        default: false
+        default: true
         type: boolean
 
       apply_himax_touch_patch:
         description: '是否应用 Himax 触摸屏修复补丁（解决 Himax 触控不释放的问题）'
         required: true
-        default: false
+        default: true
         type: boolean
 
 jobs:
